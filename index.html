@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburger Experiment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./hamburgers/dist/hamburgers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>  
+  <body>
+    
+    <header">
+      <nav class="navbar">
+        <h1 class="brand"><strong>PANCHAN KR</strong></h1>
+        <button class="hamburger hamburger--minus" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>  
+        </button>  
+        <ul id="desknav" class="navbar-nav">
+          
+          <li class="nav-item"><span class="icon"><i class="bi bi-chevron-compact-right"></i></span><a href="#" class="nav-link">HOME</a></li>
+          <li class="nav-item"><span class="icon"><i class="bi bi-chevron-compact-right"></i></span><a href="#" class="nav-link">PORTFOLIO</a></li>
+          <li class="nav-item"><span class="icon"><i class="bi bi-chevron-compact-right"></i></span><a href="#" class="nav-link">PROJECTS</a></li>
+          <li class="nav-item"><span class="icon"><i class="bi bi-chevron-compact-right"></i></span><a href="#" class="nav-link">ABOUT</a></li>
+          <li class="nav-item"><span class="icon"><i class="bi bi-chevron-compact-right"></i></span><a href="#" class="nav-link">LETS TALK</a></li>
+        </ul>  
+
+      </nav>  
+          <!-- Hero Section -->
+    <section 
+    class="vh-100 d-flex align-items-center justify-content-center text-center text-white position-relative"
+    style="background-image: url('https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" 
+    style="background-color: rgba(0, 0, 0, 0.5);"
+
+    ></div>
+    
+    <!-- Hero Content -->
+    <div class="container position-relative">
+        <h1 class="display-1 fw-bold text-uppercase">Welcome to My Portfolio</h1>
+        <p class="fs-4 mb-4">I'm a Full-Stack Web Developer creating modern and responsive designs.</p>
+        <a href="#about" class="btn btn-warning btn-lg rounded-pill">Learn More</a>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+      <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center">
+              <h2 class="display-5 fw-bold text-uppercase">About Me</h2>
+              <p class="lead">I am a passionate full-stack web developer with experience in creating modern, responsive, and dynamic websites and applications.</p>
+          </div>
+      </div>
+      
+      <div class="row align-items-center">
+          <!-- Timeline -->
+          <div class="col-lg-6 col-12 position-relative d-flex flex-column align-items-center">
+              <div class="timeline-element mb-5 text-center">
+                  <span class="icon bg-primary text-white rounded-circle mb-3" style="width: 70px; height: 70px; line-height: 70px;">
+                      <i class="bi bi-code-slash fs-1"></i>
+                  </span>
+                  <h4 class="fw-bold">Frontend Development</h4>
+                  <p>Skilled in crafting responsive and interactive front-end applications using HTML5, CSS3, JavaScript, and modern libraries like React.js.</p>
+              </div>
+
+              <div class="timeline-element mb-5 text-center">
+                  <span class="icon bg-warning text-white rounded-circle mb-3" style="width: 70px; height: 70px; line-height: 70px;">
+                      <i class="bi bi-server fs-1"></i>
+                  </span>
+                  <h4 class="fw-bold">Backend Development</h4>
+                  <p>Proficient in building scalable and secure back-end applications with Node.js, Express, and various databases including MongoDB and MySQL.</p>
+              </div>
+
+              <div class="timeline-element mb-5 text-center">
+                  <span class="icon bg-success text-white rounded-circle mb-3" style="width: 70px; height: 70px; line-height: 70px;">
+                      <i class="bi bi-pc-display-horizontal fs-1"></i>
+                  </span>
+                  <h4 class="fw-bold">UI/UX Design</h4>
+                  <p>Combining design principles and user experience to create intuitive interfaces that delight users across devices.</p>
+              </div>
+          </div>
+
+          <!-- Photo and Fun Facts -->
+          <div class="col-lg-6 col-12 text-center text-lg-start">
+              <img src="your-profile-image.jpg" alt="Web Developer" class="img-fluid rounded-circle mb-4" style="max-width: 250px;">
+              
+              <h4 class="fw-bold">More About Me</h4>
+              <p class="mb-4">In addition to my core technical skills, I’m a curious individual who loves problem-solving, learning new technologies, and engaging in exciting web development projects. When I'm not coding, you can find me exploring the latest tech trends, tinkering with side projects, or playing video games.</p>
+
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                  <div class="mx-3">
+                      <h6 class="fw-bold">10+</h6>
+                      <p>Years Experience</p>
+                  </div>
+                  <div class="mx-3">
+                      <h6 class="fw-bold">50+</h6>
+                      <p>Projects Completed</p>
+                  </div>
+                  <div class="mx-3">
+                      <h6 class="fw-bold">5</h6>
+                      <p>Programming Languages</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Project Showcase Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+      <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center">
+              <h2 class="display-5 fw-bold text-uppercase">My Projects</h2>
+              <p class="lead">A collection of some of my most creative and technical web development projects, each unique in its own way.</p>
+          </div>
+      </div>
+      
+      <div class="project-showcase">
+          <!-- Project 1 -->
+          <div class="card project-card">
+              <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 1">
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                  <div class="project-info">
+                      <h4 class="fw-bold">Project Name 1</h4>
+                      <p class="small">January 2023</p>
+                      <p class="mb-2">A brief description of the project.</p>
+                      <a href="project-link-1.html" class="btn btn-outline-light btn-sm">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="card project-card">
+              <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 2">
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                  <div class="project-info">
+                      <h4 class="fw-bold">Project Name 2</h4>
+                      <p class="small">March 2023</p>
+                      <p class="mb-2">A brief description of the project.</p>
+                      <a href="project-link-2.html" class="btn btn-outline-light btn-sm">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="card project-card">
+              <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 3">
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                  <div class="project-info">
+                      <h4 class="fw-bold">Project Name 3</h4>
+                      <p class="small">June 2023</p>
+                      <p class="mb-2">A brief description of the project.</p>
+                      <a href="project-link-3.html" class="btn btn-outline-light btn-sm">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Add more projects as needed -->
+
+          
+          <!-- Project 4 -->
+          <div class="card project-card">
+            <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 2">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <div class="project-info">
+                    <h4 class="fw-bold">Project Name 2</h4>
+                    <p class="small">March 2023</p>
+                    <p class="mb-2">A brief description of the project.</p>
+                    <a href="project-link-2.html" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+          <!-- Project 5 -->
+          <div class="card project-card">
+            <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 2">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <div class="project-info">
+                    <h4 class="fw-bold">Project Name 2</h4>
+                    <p class="small">March 2023</p>
+                    <p class="mb-2">A brief description of the project.</p>
+                    <a href="project-link-2.html" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+          <!-- Project 6 -->
+          <div class="card project-card">
+            <img src="https://cdn.pixabay.com/photo/2023/08/20/06/45/hornbill-8201730_1280.png" class="card-img" alt="Project Image 2">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <div class="project-info">
+                <h4 class="fw-bold">Project Name 2</h4>
+                <p class="small">March 2023</p>
+                <p class="mb-2">A brief description of the project.</p>
+                <a href="project-link-2.html" class="btn btn-outline-light btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 ends-->
+
+
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Skills and Education Section -->
+<section id="skills-education" class="py-5">
+  <div class="container">
+      <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center">
+              <h2 class="display-5 fw-bold text-uppercase">Skills & Education</h2>
+              <p class="lead">A comprehensive look at my technical skills and educational background, showcasing the journey of becoming a proficient web developer.</p>
+          </div>
+      </div>
+
+      <div class="split-section">
+          <!-- Skills Section -->
+          <div class="skills">
+              <h3 class="fw-bold mb-4">Technical Skills</h3>
+              
+              <div class="skill-bar">
+                  <h6>HTML & CSS</h6>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+
+              <div class="skill-bar">
+                  <h6>JavaScript</h6>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+
+              <div class="skill-bar">
+                  <h6>React.js</h6>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+
+              <div class="skill-bar">
+                  <h6>Node.js</h6>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+
+              <div class="skill-bar">
+                  <h6>Database Management (MySQL, MongoDB)</h6>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Education Section -->
+          <div class="education">
+              <h3 class="fw-bold mb-4">Education Timeline</h3>
+              <div class="timeline">
+                  <div class="timeline-event">
+                      <div class="event-marker"></div>
+                      <h5 class="fw-bold">Bachelor's Degree in Computer Science</h5>
+                      <p class="small">University of XYZ, 2015 - 2019</p>
+                      <p class="mb-0">Gained comprehensive knowledge in software development, algorithms, and data structures, laying the foundation for my web development skills.</p>
+                  </div>
+                  <div class="timeline-event">
+                      <div class="event-marker"></div>
+                      <h5 class="fw-bold">Full-Stack Web Development Bootcamp</h5>
+                      <p class="small">ABC Coding Academy, 2020</p>
+                      <p class="mb-0">Intensive program focused on modern web technologies, including HTML5, CSS3, JavaScript, React, and Node.js, leading to hands-on project experience.</p>
+                  </div>
+                  <div class="timeline-event">
+                      <div class="event-marker"></div>
+                      <h5 class="fw-bold">Certification in UX/UI Design</h5>
+                      <p class="small">Design Institute of PQR, 2021</p>
+                      <p class="mb-0">Enhanced my understanding of user-centered design, ensuring that the interfaces I build are not only functional but also aesthetically pleasing and user-friendly.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Service Section -->
+<section id="services" class="py-5">
+  <div class="container">
+      <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center">
+              <h2 class="display-5 fw-bold text-uppercase">What I Do</h2>
+              <p class="lead">Explore the range of services I offer as a web developer, designed to bring your ideas to life through creativity and technology.</p>
+          </div>
+      </div>
+
+      <div class="service-section">
+          <!-- Service 1: Web Development -->
+          <div class="service-card">
+              <div class="service-card-inner">
+                  <div class="service-card-front">
+                      <h4>Web Development</h4>
+                      <p>Building dynamic and responsive websites.</p>
+                  </div>
+                  <div class="service-card-back">
+                      <h4>Web Development</h4>
+                      <p>From front-end design to back-end integration, I create websites that are not only visually appealing but also functionally robust.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service 2: UX/UI Design -->
+          <div class="service-card">
+              <div class="service-card-inner">
+                  <div class="service-card-front">
+                      <h4>UX/UI Design</h4>
+                      <p>Crafting intuitive user experiences.</p>
+                  </div>
+                  <div class="service-card-back">
+                      <h4>UX/UI Design</h4>
+                      <p>Designing user interfaces that are both attractive and easy to navigate, ensuring an optimal user experience across all devices.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service 3: E-commerce Solutions -->
+          <div class="service-card">
+              <div class="service-card-inner">
+                  <div class="service-card-front">
+                      <h4>E-commerce Solutions</h4>
+                      <p>Creating powerful online stores.</p>
+                  </div>
+                  <div class="service-card-back">
+                      <h4>E-commerce Solutions</h4>
+                      <p>Developing scalable e-commerce platforms with secure payment gateways, inventory management, and more to boost your business.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service 4: SEO Optimization -->
+          <div class="service-card">
+              <div class="service-card-inner">
+                  <div class="service-card-front">
+                      <h4>SEO Optimization</h4>
+                      <p>Enhancing your website’s visibility.</p>
+                  </div>
+                  <div class="service-card-back">
+                      <h4>SEO Optimization</h4>
+                      <p>Implementing best SEO practices to improve your website’s ranking on search engines, driving more organic traffic to your site.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+      <div class="contact-header">
+          <h2 class="display-5 fw-bold text-uppercase">Let's Chat!</h2>
+          <p class="lead">I'd love to hear from you. Whether you have a project in mind or just want to say hello, let's get in touch!</p>
+      </div>
+
+      <div class="conversation">
+          <!-- Step 1: Name -->
+          <div class="conversation-step">
+              <div class="step-content">
+                  <h4>Hi there! What's your name?</h4>
+                  <input type="text" placeholder="Enter Your Name">
+              </div>
+          </div>
+
+          <!-- Step 2: Email -->
+          <div class="conversation-step">
+              <div class="step-content">
+                  <h4>Great to meet you! What's your email?</h4>
+                  <input type="email" placeholder="Enter Your Email">
+              </div>
+          </div>
+
+          <!-- Step 3: Message -->
+          <div class="conversation-step">
+              <div class="step-content">
+                  <h4>How can I assist you today?</h4>
+                  <textarea placeholder="Your Message"></textarea>
+              </div>
+          </div>
+
+          <!-- Step 4: Submit -->
+          <div class="conversation-step">
+              <div class="step-content">
+                  <h4>All set! Ready to send your message?</h4>
+                  <button type="submit">Send Message</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <!-- Logo and Intro -->
+          <div class="footer-section">
+              <div class="footer-logo">MyPortfolio</div>
+              <p>Innovative web solutions crafted with care and precision. Let's create something amazing together!</p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+              <h4>Contact</h4>
+              <p>Email: <a href="mailto:contact@myportfolio.com">contact@myportfolio.com</a></p>
+              <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+              <p>Location: <a href="https://www.google.com/maps?q=Your+Location" target="_blank">Find me on Google Maps</a></p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+              <h4>Quick Links</h4>
+              <p><a href="#about">About Me</a></p>
+              <p><a href="#projects">Projects</a></p>
+              <p><a href="#contact">Contact</a></p>
+              <p><a href="/blog">Blog</a></p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-section">
+              <h4>Follow Me</h4>
+              <div class="social-icons">
+                  <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-credits text-center">
+          <p>&copy; 2024 MyPortfolio. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+      </div>
+  </div>
+</footer>
+
+    </header>   
+      
+
+    
+
+    <!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+  </html>
